@@ -112,12 +112,10 @@ html[lang="en"] .pain:after{content:"”"}
 .checks li{padding-left:30px;position:relative;margin:8px 0;color:var(--soft)}
 .checks li:before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:800}
 
-.photos{display:grid;grid-template-columns:1.45fr 1fr;gap:14px;margin:26px 0 34px}
-.photos figure{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:380px;background:var(--card)}
-.photos img{width:100%;height:100%;object-fit:cover}
-.photos figure:last-child img{object-position:50% 35%}
-.photos figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:15px;color:#eee}
-@media(max-width:760px){.photos{grid-template-columns:1fr}.photos figure{height:260px}}
+.about-photo{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:520px;background:var(--card)}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.about-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:15px;color:#eee}
+@media(max-width:860px){.about-photo{height:380px}}
 /* Stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center}
@@ -309,10 +307,6 @@ html[lang="en"] .de{display:none!important}
   <div class="wrap">
     <p class="eyebrow"><span class="de">Warum ich</span><span class="en">Why me</span></p>
     <h2><span class="de">Von einem Live-Keyboarder – für Live-Keyboarder</span><span class="en">From a live keyboardist – for live keyboardists</span></h2>
-    <div class="photos">
-      <figure><img src="bilder/thorsten-live-publikum.jpg" alt="Blick von der Bühne hinter Thorsten Hillmann am Keyboard ins Publikum" loading="lazy" width="1024" height="768"><figcaption><span class="de">Da, wo die Sounds funktionieren müssen</span><span class="en">Where the sounds have to work</span></figcaption></figure>
-      <figure><img src="bilder/thorsten-kronos-stadtfest.jpg" alt="Thorsten Hillmann mit Korg Kronos beim Stadtfest Unna" loading="lazy" width="769" height="1024"><figcaption><span class="de">Mit dem Korg Kronos beim Stadtfest Unna</span><span class="en">With the Korg Kronos at a city festival</span></figcaption></figure>
-    </div>
     <div class="split" style="align-items:start">
       <div>
         <p class="lead" style="margin-bottom:16px">
@@ -323,13 +317,14 @@ html[lang="en"] .de{display:none!important}
           <span class="de">Als Maschinenbau-Ingenieur (M. Eng.) denke ich in Systemen: Jeder Sound ist auf Lautstärke, Frequenzgang und Spielbarkeit im Live-Einsatz optimiert – und jede Halterung auf Stabilität am konkreten Keyboard.</span>
           <span class="en">As a mechanical engineer (M. Eng.) I think in systems: every sound is optimised for level, frequency response and playability on stage – and every mount for stability on your specific keyboard.</span>
         </p>
+        <div class="stats stats2" style="margin-top:26px">
+          <div class="stat"><b>1996</b><span class="de">live auf der Bühne</span><span class="en">playing live since</span></div>
+          <div class="stat"><b>10+</b><span class="de">Plattformen</span><span class="en">platforms</span></div>
+          <div class="stat"><b>30+</b><span class="de">Keyboards mit Halterung</span><span class="en">keyboards with a mount</span></div>
+          <div class="stat"><b>★ 5,0</b><span class="de">Google-Bewertung</span><span class="en">Google rating</span></div>
       </div>
-      <div class="stats stats2" style="margin-top:0">
-        <div class="stat"><b>1996</b><span class="de">live auf der Bühne</span><span class="en">playing live since</span></div>
-        <div class="stat"><b>10+</b><span class="de">Plattformen</span><span class="en">platforms</span></div>
-        <div class="stat"><b>30+</b><span class="de">Keyboards mit Halterung</span><span class="en">keyboards with a mount</span></div>
-        <div class="stat"><b>★ 5,0</b><span class="de">Google-Bewertung</span><span class="en">Google rating</span></div>
       </div>
+      <figure class="about-photo"><img src="bilder/thorsten-kronos-stadtfest.jpg" alt="Thorsten Hillmann mit Korg Kronos beim Stadtfest Unna" loading="lazy" width="769" height="1024"><figcaption><span class="de">Mit dem Korg Kronos beim Stadtfest Unna</span><span class="en">With the Korg Kronos at a city festival</span></figcaption></figure>
     </div>
   </div>
 </section>
